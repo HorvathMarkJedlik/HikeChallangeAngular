@@ -1,1 +1,17 @@
-<p>hike-list works!</p>
+<h1>Teljesítménytúrák 2024 október</h1>
+  <div class="row">
+    @for (item of challenges; track $index) {
+      <div class="card" >
+        <div><img [src]="item.image" alt=""></div>
+        <div class="date" >{{item.date}}</div>
+        <div class="name" >{{item.name}}</div>
+        <div class="place" > <img src="images/mapmark.svg" class="placemarker" alt=""> {{item.from}}</div>
+        <div class="info" >{{item.info}}</div>
+        <button>Részletek</button>
+      </div>
+      }
+  </div>
+    <div class="allMoney">
+      <h1 >Az eddig jelentkezések össz nevezési díja: <span>0</span> Ft</h1>
+    </div>
+
